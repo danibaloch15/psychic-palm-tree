@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>My Friend Hassan Baby</title>
+	<style>
+		body {
+			font-family: Arial, sans-serif;
+			background-color: rgb(16, 26, 53);
+			background-size: cover;
+			background-position: center;
+			color: #8f0909;
+			text-shadow: 1px 1px 1px rgba(0, 0, 0, 0.7);
+			padding: 20px;
+			margin: 0;
+		}
+
+		h1 {
+			font-size: 48px;
+			text-align: center;
+			margin-top: 50px;
+			margin-bottom: 30px;
+            color: rgb(215, 250, 220);
+		}
+
+		p {
+			font-size: 24px;
+			text-align: center;
+			margin-bottom: 50px;
+		}
+
+		button {
+			background-color: #008080;
+			color: #eeeeee;
+			border: none;
+			padding: 10px 20px;
+			border-radius: 5px;
+			font-size: 20px;
+			cursor: pointer;
+			margin-top: 20px;
+		}
+
+		button:hover {
+			background-color: #00b3b3;
+		}
+
+		#quote {
+			font-size: 24px;
+			font-style: italic;
+			text-align: center;
+			margin-top: 50px;
+		}
+
+	</style>
+</head>
+<body>
+	<h1>Hassan Baby</h1>
+	<p>han bhai yeh tere liye banaya try kar mazy kar or yeh jo neche dabba dikh raha ispe balochi vala touch mar likn piyar se yeh tere liye shairi nikale ga vo b engreji mein!</p>
+	<button onclick="generateQuote()">Mujhe daba oye</button>
+	<div id="quote"></div>
+
+	<script>
+		// JavaScript code
+		function generateQuote() {
+			let quotes = [
+				"Friendship is the hardest thing in the world to explain. It's not something you learn in school. But if you haven't learned the meaning of friendship, you really haven't learned anything. - Muhammad Ali",
+				"A real friend is one who walks in when the rest of the world walks out. - Walter Winchell",
+				"A friend is someone who knows all about you and still loves you. - Elbert Hubbard",
+				"The only way to have a friend is to be one. - Ralph Waldo Emerson",
+				"The greatest gift of life is friendship, and I have received it. - Hubert H. Humphrey"
+			];
+
+			let randomIndex = Math.floor(Math.random() * quotes.length);
+			let quoteElement = document.getElementById("quote");
+			quoteElement.innerText = quotes[randomIndex];
+		}
+	</script>
+</body>
+</html>
+
